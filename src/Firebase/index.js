@@ -9,14 +9,14 @@ import { LocalStorage } from 'quasar'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAPtZZ5FLTO5NKUOcJKgr42WXnbdd2ntzM",
-  authDomain: "testproject1-b4c4f.firebaseapp.com",
-  projectId: "testproject1-b4c4f",
-  storageBucket: "testproject1-b4c4f.appspot.com",
-  messagingSenderId: "283783568329",
-  appId: "1:283783568329:web:02bb9834d4f14dd81ae618",
-  measurementId: "G-02PB0JQQK1"
-};
+    apiKey: "AIzaSyDoPw1-wMAEP4mYYwJTfj3dIK5um14v5JQ",
+    authDomain: "bassproject1-421c8.firebaseapp.com",
+    projectId: "bassproject1-421c8",
+    storageBucket: "bassproject1-421c8.appspot.com",
+    messagingSenderId: "576538986740",
+    appId: "1:576538986740:web:d9abdde05c9f5f7b41b6a1",
+    measurementId: "G-GV1JBQEMYW"
+  };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
@@ -26,10 +26,10 @@ export const storage = getStorage();
 export const rtdb = getDatabase(app); // Initialize the Realtime Database
 
 
-onAuthStateChanged(auth, (user) => {
- if (user) {
-  LocalStorage.set('user', user)
- } else {
-  LocalStorage.remove('user')
- }
-});
+// onAuthStateChanged(auth, (user) => {
+//  if (user) {
+//   LocalStorage.set('user', user)
+//  } else {
+//   LocalStorage.remove('user')
+//  }
+// });
